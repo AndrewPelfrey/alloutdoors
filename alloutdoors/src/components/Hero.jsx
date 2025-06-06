@@ -35,7 +35,7 @@ function Hero() {
             data-aos="fade-down"
             data-aos-delay="200"
           >
-            Premium Fencing for All Outdoors
+            All Outdoors Premium Fencing
           </h1>
           <p
             className="text-lg md:text-xl text-gray-200 font-body"
