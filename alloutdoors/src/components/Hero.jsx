@@ -1,14 +1,12 @@
 import React from "react";
 import { FiPhone, FiMail } from "react-icons/fi";
 
-
 function Hero() {
   return (
     <section
-  className="relative min-h-[100dvh] overflow-hidden bg-center bg-cover md:bg-fixed"
-  style={{ backgroundImage: "url('/hero5.jpeg')" }}
->
-
+      className="relative min-h-[100dvh] overflow-hidden bg-center bg-cover md:bg-fixed"
+      style={{ backgroundImage: "url('/hero5.jpeg')" }}
+    >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
 
@@ -31,21 +29,18 @@ function Hero() {
       </div>
 
       {/* Hero Content */}
-<div className="relative z-30 flex items-center justify-center h-full px-6 pt-28 md:pt-40">
+      <div className="relative z-30 flex items-center justify-center h-full px-6 pt-28 md:pt-40">
         <div className="text-center text-white max-w-2xl space-y-6">
-        <h1
-  className="text-5xl md:text-6xl font-bold leading-tight font-display"
-  data-aos="fade-down"
-  data-aos-delay="200"
->
-  All Outdoors<br />
-  <span className="text-orange-300 text-3xl md:text-4xl font-semibold tracking-wide">
-    Premium Fencing
-  </span>
-</h1>
-
-
-
+          <h1
+            className="text-5xl md:text-6xl font-bold leading-tight font-display"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
+            All Outdoors<br />
+            <span className="text-orange-300 text-3xl md:text-4xl font-semibold tracking-wide">
+              Premium Fencing
+            </span>
+          </h1>
 
           <p
             className="text-lg md:text-xl text-gray-200 font-body"
@@ -56,27 +51,35 @@ function Hero() {
             vinyl, wood, chain link, and ornamental fencing throughout Greater
             Cleveland.
           </p>
-         <a
-  href="/contact"
-  className="inline-block bg-flag-red hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105 shadow-md shake-slow"
-  data-aos="zoom-in"
-  data-aos-delay="600"
->
-  Get Your Free Quote
-</a>
 
-{/* Contact Info */}
-<div className="mt-4 text-white/70 text-sm flex flex-col items-center space-y-1">
-  <div className="flex items-center space-x-2">
-    <FiPhone className="w-4 h-4" />
-    <a href="tel:2161234567" className="hover:underline">216-123-4567</a>
-  </div>
-  <div className="flex items-center space-x-2">
-    <FiMail className="w-4 h-4" />
-    <a href="mailto:info@alloutdoorfence.com" className="hover:underline">info@alloutdoorfence.com</a>
-  </div>
-</div>
+          <a
+            href="/contact"
+            className="inline-block bg-flag-red hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105 shadow-md shake-slow"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            Get Your Free Quote
+          </a>
 
+          {/* Animated Contact Info */}
+          <div
+            className="mt-4 text-white/70 text-sm flex flex-col items-center space-y-1"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            <div className="flex items-center space-x-2">
+              <FiPhone className="w-4 h-4" />
+              <a href="tel:2161234567" className="hover:underline">
+                216-123-4567
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FiMail className="w-4 h-4" />
+              <a href="mailto:info@alloutdoorfence.com" className="hover:underline">
+                info@alloutdoorfence.com
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
