@@ -1,4 +1,6 @@
 import React from "react";
+import { FiPhone, FiMail } from "react-icons/fi";
+
 
 function Hero() {
   return (
@@ -54,7 +56,7 @@ function Hero() {
             vinyl, wood, chain link, and ornamental fencing throughout Greater
             Cleveland.
           </p>
-          <a
+         <a
   href="/contact"
   className="inline-block bg-flag-red hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105 shadow-md shake-slow"
   data-aos="zoom-in"
@@ -62,6 +64,18 @@ function Hero() {
 >
   Get Your Free Quote
 </a>
+
+{/* Contact Info */}
+<div className="mt-4 text-white/70 text-sm flex flex-col items-center space-y-1">
+  <div className="flex items-center space-x-2">
+    <FiPhone className="w-4 h-4" />
+    <a href="tel:2161234567" className="hover:underline">216-123-4567</a>
+  </div>
+  <div className="flex items-center space-x-2">
+    <FiMail className="w-4 h-4" />
+    <a href="mailto:info@alloutdoorfence.com" className="hover:underline">info@alloutdoorfence.com</a>
+  </div>
+</div>
 
         </div>
       </div>
