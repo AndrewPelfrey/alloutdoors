@@ -29,7 +29,7 @@ function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-30 flex items-center justify-center h-full px-6">
+<div className="relative z-30 flex items-center justify-center h-full px-6 pt-20 md:pt-28">
         <div className="text-center text-white max-w-2xl space-y-6">
           <h1
             className="text-5xl md:text-6xl font-bold leading-tight font-display"
