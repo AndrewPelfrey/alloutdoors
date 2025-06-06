@@ -31,13 +31,18 @@ function Hero() {
       {/* Hero Content */}
 <div className="relative z-30 flex items-center justify-center h-full px-6 pt-28 md:pt-40">
         <div className="text-center text-white max-w-2xl space-y-6">
-          <h1
+         <h1
   className="text-5xl md:text-6xl font-bold leading-tight font-display"
   data-aos="fade-down"
   data-aos-delay="200"
 >
-  All Outdoors <span className="italic">Premium Fencing</span>
+  All Outdoors<br />
+  <span className="text-flag-red text-3xl md:text-4xl font-semibold tracking-wide">
+    Premium Fencing
+  </span>
 </h1>
+
+
 
           <p
             className="text-lg md:text-xl text-gray-200 font-body"
