@@ -3,9 +3,10 @@ import React from "react";
 function Hero() {
   return (
     <section
-      className="relative h-screen overflow-hidden bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('/hero5.jpeg')" }}
-    >
+  className="relative min-h-[100dvh] overflow-hidden bg-center bg-cover md:bg-fixed"
+  style={{ backgroundImage: "url('/hero5.jpeg')" }}
+>
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
 
