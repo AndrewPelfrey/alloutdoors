@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaTools, FaTree, FaWater, FaSeedling, FaBullhorn } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -72,6 +72,7 @@ function Services() {
           {fences.map((fence, index) => {
             const ref = useRef(null);
             const isInView = useInView(ref, { once: true });
+            const [showTestimonial, setShowTestimonial] = useState(true);
 
             return (
               <motion.div
@@ -85,17 +86,24 @@ function Services() {
                 <div className="md:flex">
                   <div className="md:w-1/2 relative">
                     <div className="relative" ref={ref}>
-                      {fence.testimonial && isInView && (
+                      {fence.testimonial && isInView && showTestimonial && (
                         <motion.div
-                          className="absolute top-2 left-2 right-2 z-10 flex items-center gap-2 text-xs italic text-gray-800 drop-shadow-md bg-white bg-opacity-90 px-3 py-2 rounded-md"
+                          className="absolute top-2 left-2 right-2 z-10 flex items-start gap-2 text-xs italic text-gray-800 drop-shadow-md bg-white bg-opacity-90 px-3 py-2 rounded-md"
                           initial={{ opacity: 0, y: -20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 4, duration: 0.6, ease: "easeOut" }}
                         >
-                          <FaBullhorn className="text-flag-red w-4 h-4" />
+                          <FaBullhorn className="text-flag-red w-4 h-4 mt-0.5" />
                           <span className="line-clamp-3">"{fence.testimonial.quote}"</span>
+                          <button
+                            onClick={() => setShowTestimonial(false)}
+                            className="ml-auto text-gray-400 hover:text-red-500 text-lg leading-none"
+                          >
+                            &times;
+                          </button>
                         </motion.div>
                       )}
+
                       <Swiper
                         modules={[Navigation, Pagination]}
                         navigation={{ enabled: typeof window !== 'undefined' && window.innerWidth >= 768 }}
