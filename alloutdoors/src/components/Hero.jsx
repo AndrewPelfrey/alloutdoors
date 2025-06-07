@@ -4,11 +4,14 @@ import { FiPhone, FiMail } from "react-icons/fi";
 function Hero() {
   return (
     <section
-      className="relative min-h-[100dvh] overflow-hidden bg-center bg-cover md:bg-fixed"
-      style={{ backgroundImage: "url('/hero5.jpeg')" }}
-    >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
+  className="relative min-h-[100dvh] overflow-hidden bg-cover md:bg-fixed"
+  style={{
+    backgroundImage: "url('/tryhero.jpeg')",
+    backgroundPosition: '60% center',
+  }}
+>
+  {/* Dark Overlay */}
+<div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
 
       {/* Floating Particles */}
       <div className="absolute inset-0 pointer-events-none z-20">

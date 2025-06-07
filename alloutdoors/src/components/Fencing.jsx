@@ -1,7 +1,7 @@
 function Fencing() {
     const fences = [
       { title: "Chain Link", image: "/chainlink.webp", href: "/services#chainlink" },
-      { title: "Wood", image: "/woood.jpeg", href: "/services#wood" },
+      { title: "Wood", image: "/outdoor-wood7.jpeg", href: "/services#wood" },
       { title: "Vinyl", image: "/vinyl.jpeg", href: "/services#vinyl" },
       { title: "Ornamental", image: "/ornamental.jpeg", href: "/services#ornamental" },
     ];
