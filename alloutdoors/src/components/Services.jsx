@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const testimonials = [
-  { name: "Dylan Ahern", quote: "Matt was super helpful from the beginning. My neighbors fence was installed poorly by another company and he assured me mine would be done right. Sure enough it looks amazing. Thanks again!" },
+  { name: "Dylan Ahern", quote: "Matt was super helpful from the beginning." },
   { name: "Christine Albright", quote: "Great communication, very professional and they had it up quickly! Highly recommend!" },
   { name: "Elizabeth Coleman", quote: "Solid and neat gate installation—now my dog can run freely and safely!" },
   { name: "Anna Cvitkovich", quote: "Professional, responsive, and no pressure—really happy with the final result!" },
