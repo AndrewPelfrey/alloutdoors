@@ -41,7 +41,6 @@ export default function Contact() {
           animate="show"
           className="bg-white/10 backdrop-blur-lg p-8 rounded-xl shadow-2xl space-y-6"
         >
-          {/* Hidden Inputs for Netlify */}
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
             <label>
@@ -76,7 +75,7 @@ export default function Contact() {
                 </label>
                 <input
                   {...field}
-                  className="w-full p-3 rounded-lg border border-gray-300 focus:ring focus:ring-orange-400"
+                  className="w-full p-3 rounded-lg border border-gray-300 bg-white text-black focus:ring focus:ring-orange-400"
                 />
               </motion.div>
             ))}
@@ -89,7 +88,9 @@ export default function Contact() {
                   required
                   className="w-full p-3 pr-10 rounded-lg border border-gray-300 bg-white text-black appearance-none focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 shadow-sm"
                 >
-                  <option value="" disabled selected>Select a service</option>
+                  <option value="" disabled selected>
+                    Select a service
+                  </option>
                   <optgroup label="Fencing">
                     <option value="install-wood">Wood Fence Installation</option>
                     <option value="install-vinyl">Vinyl Fence Installation</option>
@@ -125,7 +126,7 @@ export default function Contact() {
                 type="text"
                 name="fence-type"
                 placeholder="e.g. Wood, Vinyl, Chain Link, etc. or describe the service"
-                className="w-full p-3 rounded-lg border border-gray-300 focus:ring focus:ring-orange-400"
+                className="w-full p-3 rounded-lg border border-gray-300 bg-white text-black focus:ring focus:ring-orange-400"
               />
             </motion.div>
 
@@ -135,7 +136,7 @@ export default function Contact() {
                 name="message"
                 rows="5"
                 placeholder="Give us some details about your project..."
-                className="w-full p-3 rounded-lg border border-gray-300 focus:ring focus:ring-orange-400"
+                className="w-full p-3 rounded-lg border border-gray-300 bg-white text-black focus:ring focus:ring-orange-400"
               />
             </motion.div>
           </div>
