@@ -143,21 +143,22 @@ function Services() {
         <h2 className="text-3xl font-bold text-center mt-24 mb-8 text-flag-red">
           Other Landscaping Services
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-          {otherServices.map(({ name, icon: Icon }, i) => (
-            <motion.div
-              key={i}
-              className="flex flex-col items-center bg-white shadow rounded-lg p-4 hover:shadow-xl transition"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Icon className="text-3xl text-flag-red mb-2" />
-              <p className="text-center text-sm font-semibold">{name}</p>
-            </motion.div>
-          ))}
-        </div>
+       <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+  {otherServices.map(({ name, icon: Icon }, i) => (
+    <motion.div
+      key={i}
+      className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-md p-3"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: i * 0.1, duration: 0.5 }}
+      viewport={{ once: true }}
+    >
+      <Icon className="text-3xl text-flag-red mb-2" />
+      <p className="text-center text-sm font-semibold">{name}</p>
+    </motion.div>
+  ))}
+</div>
+
       </div>
     </section>
   );
